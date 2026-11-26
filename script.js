@@ -1,10 +1,91 @@
 
 /* EDIT YOUR PERSONAL CONTENT HERE */
 
-const galleryItems = Array.from({length:20}, (_,i)=>({
-  image:`photo-${String(i+1).padStart(2,"0")}.jpeg`,
-  description:`A favourite little moment. Replace this caption with the story behind photo ${i+1}.`
-}));
+
+/* EDIT YOUR PERSONAL CONTENT HERE */
+
+const galleryItems = [
+  {
+    image: "photo-01.jpeg",
+    description: `Oh, look at how STUDIOUS you were! 😂 What happened to this version of you?`
+  },
+  {
+    image: "photo-02.jpeg",
+    description: `Looks like the winning streak goes way back to your childhood. Some things never change!`
+  },
+  {
+    image: "photo-03.jpeg",
+    description: `Just a little king on his royal bubble throne, enjoying the finer things in life. 👑`
+  },
+  {
+    image: "photo-04.jpeg",
+    description: `Ready to conquer the world, armed with endless ideas, absolutely no fear, and the confidence that nobody can beat him.`
+  },
+  {
+    image: "photo-05.jpeg",
+    description: `Two years old and already looking like he has some very important business to attend to. The tiny CEO has entered the chat. 😂`
+  },
+  {
+    image: "photo-06.jpeg",
+    description: `The political legacy of supporting BJP must go on. Some traditions are simply non-negotiable!`
+  },
+  {
+    image: "photo-07.jpeg",
+    description: `"Oh, I'm a strong man with a French moustache, dashing looks, and a personality that could make anyone swoon. The ladies must be lining up already!"`
+  },
+  {
+    image: "photo-08.jpeg",
+    description: `"Oh damn, you look prettier as a girl. LOL." 😂`
+  },
+  {
+    image: "photo-09.jpeg",
+    description: `Bade log ke saath uthna-baithna from bachpan itself. Clearly, the connections started early!`
+  },
+  {
+    image: "photo-10.jpeg",
+    description: `No matter how many birthdays you celebrate or how grown-up you become, you will forever remain this little kid in front of your mom. ❤️`
+  },
+  {
+    image: "photo-11.jpeg",
+    description: `"Oh my God, I look SO cool. These specs are doing wonders for my personality. Everyone at this event is going to think I'm the coolest person here. And did you see my dance moves? Absolute spotlight material!"`
+  },
+  {
+    image: "photo-12.jpeg",
+    description: `So the legendary Kumbhakarna sleeping habits weren't newly developed after all. The evidence clearly goes way back! 😂`
+  },
+  {
+    image: "photo-13.jpeg",
+    description: `Of course, a king deserves his own crown. The cake-covered face is just the royal finishing touch. 👑`
+  },
+  {
+    image: "photo-14.jpeg",
+    description: `"Oh, I LOVE food. Why bother looking at the camera when there's a perfectly good corn cob in my hands?"`
+  },
+  {
+    image: "photo-15.jpeg",
+    description: `No matter how old you grow, you'll always be that little boy running along the beach, splashing around in the water, and playing with your dad. Some memories never grow old. ❤️`
+  },
+  {
+    image: "photo-16.jpeg",
+    description: `"Oh, look at that lovely gap between my front teeth! Perfect ventilation, honestly. Who needs an air conditioner when you've got natural airflow?" 😂`
+  },
+  {
+    image: "photo-17.jpeg",
+    description: `The early 2000s called. They want their aspiring TikTok star back. One hand in the pocket, the serious expression, the skinny jeans. A whole superstar in the making!`
+  },
+  {
+    image: "photo-18.jpeg",
+    description: `You will forever be her first love. Make sure you set the example right for her, look out for her, and never stop loving her. ❤️`
+  },
+  {
+    image: "photo-19.jpeg",
+    description: `"I am a very renowned Kannada poet. My literary masterpieces include Keshav's Wisdom, Prajwal's Kathe, and several other works that have moved generations. So many people look up to me. Autographs, anyone?"`
+  },
+  {
+    image: "photo-20.jpeg",
+    description: `Three little siblings, a lifetime of memories, and a bond that started long before any of you knew what growing up meant. No matter where life takes you, you'll always have each other. ❤️`
+  }
+];
 
 const chapters = [
   {title:"Early Years",body:"Every good story has a beginning. Add a few memories from Keshav's childhood here: the little habits, big mischiefs, family stories and the moments that made him who he is."},

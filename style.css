@@ -227,6 +227,28 @@ body {
   transform: rotate(4deg);
   box-shadow: 4px 8px 15px #49342b35;
   z-index: 2;
+}.birthday-hat {
+  position: absolute;
+  top: -31px;
+  right: 17px;
+  width: 0;
+  height: 0;
+  border-left: 22px solid transparent;
+  border-right: 22px solid transparent;
+  border-bottom: 58px solid var(--wine);
+  transform: rotate(17deg);
+  z-index: 5;
+}
+
+.birthday-hat::after {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--yellow);
 }
 
 .hero-portrait {

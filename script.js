@@ -47,11 +47,31 @@ function renderLetters(){
   grid.innerHTML=letters.map((_,i)=>`<button class="envelope-card" data-letter="${i}" aria-label="Open envelope ${i+1}"><span class="envelope-shape"><span class="envelope-number">LETTER ${String(i+1).padStart(2,"0")}</span><span class="envelope-seal-small">K</span></span></button>`).join("");
   grid.querySelectorAll(".envelope-card").forEach(card=>card.addEventListener("click",()=>openLetter(Number(card.dataset.letter))));
 }
-function openLetter(i){
-  const item=letters[i];document.getElementById("letterFrom").textContent=item.from;document.getElementById("letterText").textContent=item.text;
-  const modal=document.getElementById("letterModal");modal.classList.add("open");modal.setAttribute("aria-hidden","false");
+
+function openLetter(i) {
+  const item = letters[i];
+
+  document.getElementById("letterFrom").textContent = item.from;
+  document.getElementById("letterText").textContent = item.text;
+
+  const modal = document.getElementById("letterModal");
+
+  modal.classList.remove("revealed");
+  modal.classList.add("open");
+  modal.setAttribute("aria-hidden", "false");
+
+  // Give the closed envelope time to appear first
+  setTimeout(() => {
+    modal.classList.add("revealed");
+  }, 100);
 }
-function closeModal(el){el.classList.remove("open");el.setAttribute("aria-hidden","true")}
+
+function closeModal(el) {
+  el.classList.remove("revealed");
+  el.classList.remove("open");
+  el.setAttribute("aria-hidden", "true");
+}
+
 document.addEventListener("DOMContentLoaded",()=>{
   renderGallery();renderChapters();renderLetters();
   document.querySelectorAll(".modal-close").forEach(btn=>btn.addEventListener("click",()=>closeModal(btn.closest(".photo-modal,.chapter-modal,.letter-modal"))));

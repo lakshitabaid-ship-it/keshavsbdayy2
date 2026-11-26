@@ -338,8 +338,9 @@ body {
 
 .speech-bubble {
   position: absolute;
-  right: 4%;
+  left: 7%;
   bottom: 12%;
+  right: auto;
   z-index: 4;
   background: #fff8ec;
   border: 2px solid var(--ink);
@@ -350,7 +351,7 @@ body {
   place-items: center;
   text-align: center;
   font: italic 15px/.95 var(--serif);
-  transform: rotate(8deg);
+  transform: rotate(-8deg);
   box-shadow: 3px 3px 0 var(--wine);
 }
 
@@ -368,7 +369,8 @@ body {
   position: absolute;
   bottom: 7%;
   right: 8%;
-  z-index: 1;
+  left: auto;
+  z-index: 4;
   background: var(--wine);
   color: #f6e8d7;
   padding: 9px 12px;

@@ -87,13 +87,26 @@ const galleryItems = [
   }
 ];
 
+
 const chapters = [
-  {title:"Early Years",body:"Every good story has a beginning. Add a few memories from Keshav's childhood here: the little habits, big mischiefs, family stories and the moments that made him who he is."},
-  {title:"The Person",body:"The things that make Keshav Keshav. Add a few words about his personality, his humour, the way he sees the world and all the little things people around him recognise instantly."},
-  {title:"Things He Loves",body:"The favourites list. Add his favourite music, food, films, places, hobbies, comfort things and the interests he can talk about for hours."},
-  {title:"A Few Rare Facts",body:"The details that deserve their own footnote. Add funny facts, unexpected talents, oddly specific preferences and stories that only his closest people know."},
-  {title:"The Keshav Effect",body:"Some people leave a place exactly as they found it. Keshav probably doesn't. Add what changes when he is around, what people appreciate about him and why he matters."}
+  {
+    title: "The Person",
+    body: `Meet Keshav Chikkamath. Marketing Head, Creative Intelligence, and the unofficial influencer of the group. A man who can probably turn an ordinary conversation into a full-fledged campaign strategy. He's respectful, thoughtful and carries himself with a certain dignity. But don't let that fool you. Behind the composed exterior is a professional ragebaiter who knows exactly which buttons to press and takes questionable amounts of joy in pressing them. He's also our very own Dharmapalaka, with a genuine devotion to Lord Krishna and a faith that is an important part of who he is. A curious combination of spirituality, strategy and absolute mischief. And yes, the group calls him Pig. The title is self-explanatory.`
+  },
+  {
+    title: "Things He Loves",
+    body: `Give this man a script, an advertisement, a campaign brief or a marketing problem, and watch him come alive. Keshav isn't just interested in marketing. He's a full-blown marketing nerd. The kind of person who will notice an advertisement, analyse its concept, discuss its execution and probably have three suggestions for how it could have been better. Scripting, advertising, brand communication and creative storytelling are right up his alley. He enjoys the thought behind the message just as much as the message itself. Whether it's coming up with a concept, finding the right hook or figuring out how to make an idea stick, his brain is always working on the next big thing. And somewhere in that very busy creative mind is a lifelong ambition to become the next Puneeth Rajkumar. A versatile actor, apparently. The man has range, or at least he firmly believes he does.`
+  },
+  {
+    title: "A Few Rare Facts",
+    body: `A few things you should know about this rather interesting individual. He is Rashmi Mam's favourite, a distinction he will carry with the pride of someone who has won a national award. He is also the patent holder of the legendary phrase "Nimm Ajji". A linguistic contribution that deserves its own place in history. Then there's his rather dedicated position as a follower of Setra after Petra. We won't question the order of priorities here. And, of course, there is the famous pig laugh, which is less of a laugh and more of an announcement that Keshav has entered the vicinity. Some facts are better left unexplained.`
+  },
+  {
+    title: "The Keshav Effect",
+    body: `Every group has someone who leaves an impression. Keshav makes sure nobody gets away without one. He's the influencer, the creative mind, the marketing head and, occasionally, the reason an otherwise peaceful group conversation turns into a debate. He has a knack for getting people involved, making ideas happen and giving even the most ordinary situations a little extra drama. His confidence, humour and ability to get a reaction out of practically anyone make him a rather unforgettable presence. Add the wannabe superstar energy, the pig laugh and the occasional ragebait episode, and you have the complete Keshav experience. Love him, argue with him, or threaten to block him. Somehow, he always finds his way back into the conversation.`
+  }
 ];
+
 
 
 /* ALL 11 PERSONAL LETTERS */

@@ -77,3 +77,40 @@
   font: 9px var(--mono);
   color: #64584e;
 }
+
+/* ENVELOPE OPENING ANIMATION */
+
+.open-envelope {
+  perspective: 1000px;
+}
+
+.envelope-flap {
+  transform-origin: top center;
+  backface-visibility: hidden;
+  transition: transform 0.75s ease;
+}
+
+.letter-paper {
+  transform: translateY(0);
+  transition: transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.envelope-seal {
+  transition: opacity 0.25s ease;
+}
+
+/* The envelope opens only after the modal appears */
+
+.letter-modal.revealed .letter-paper {
+  transform: translateY(-205px);
+  transition-delay: 0.45s;
+}
+
+.letter-modal.revealed .envelope-flap {
+  transform: rotateX(180deg);
+  z-index: 1;
+}
+
+.letter-modal.revealed .envelope-seal {
+  opacity: 0;
+}

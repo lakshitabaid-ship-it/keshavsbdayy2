@@ -1,16 +1,159 @@
+
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>The Mailroom — Keshav</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Special+Elite&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head>
-<body class="sub-page letters-page"><div class="paper-grain"></div>
-<header class="site-top"><a class="wordmark" href="index.html">THE KESHAV ISSUE <span>VOL. 19</span></a><a class="back-link" href="index.html">← BACK TO COVER</a></header>
-<main class="sub-main">
-  <div class="sub-masthead"><span class="eyebrow">CHAPTER 03 / THE MAILROOM</span><span class="issue-number">11 ENVELOPES · PRIVATE CORRESPONDENCE</span></div>
-  <h1 class="sub-title">Words worth<br><em>keeping.</em></h1>
-  <p class="sub-intro">A little post from people who wanted you to know just how much you mean to them. Choose an envelope.</p>
-  <div class="mailroom-top"><span>INCOMING / 11 PIECES</span><span>DO NOT OPEN WITHOUT A SMILE</span><span>✉</span></div>
-  <section class="envelope-grid" id="envelopeGrid"></section>
-  <p class="mailroom-note">DELIVERED WITH LOVE · OPEN WHENEVER YOU NEED A REMINDER.</p>
-</main>
-<div class="letter-modal" id="letterModal" aria-hidden="true"><div class="letter-stage"><button class="modal-close letter-close" aria-label="Close">×</button><div class="open-envelope"><div class="envelope-back"></div><div class="letter-paper"><span class="letter-from" id="letterFrom"></span><div class="letter-text" id="letterText"></div></div><div class="envelope-front"></div><div class="envelope-flap"></div><span class="envelope-seal">K</span></div><p class="letter-hint">A MESSAGE, JUST FOR YOU</p></div></div>
-<footer class="site-footer"><span>THE KESHAV ISSUE · 19TH BIRTHDAY</span><span>THE MAILROOM / 03</span><a href="index.html">HOME ↑</a></footer>
-<script src="script.js"></script></body></html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Mailroom — Keshav</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&family=Special+Elite&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="sub-page letters-page">
+
+  <div class="paper-grain"></div>
+
+  <!-- HEADER -->
+
+  <header class="site-top">
+    <a class="wordmark" href="index.html">
+      THE KESHAV ISSUE <span>VOL. 19</span>
+    </a>
+
+    <a class="back-link" href="index.html">
+      ← BACK TO COVER
+    </a>
+  </header>
+
+
+  <!-- MAIN MAILROOM -->
+
+  <main class="sub-main">
+
+    <div class="sub-masthead">
+      <span class="eyebrow">CHAPTER 03 / THE MAILROOM</span>
+      <span class="issue-number">11 ENVELOPES · PRIVATE CORRESPONDENCE</span>
+    </div>
+
+    <h1 class="sub-title">
+      Words worth<br>
+      <em>keeping.</em>
+    </h1>
+
+    <p class="sub-intro">
+      A little post from people who wanted you to know just how much you mean to them.
+      Choose an envelope.
+    </p>
+
+    <div class="mailroom-top">
+      <span>INCOMING / 11 PIECES</span>
+      <span>DO NOT OPEN WITHOUT A SMILE</span>
+      <span>✉</span>
+    </div>
+
+    <section class="envelope-grid" id="envelopeGrid"></section>
+
+    <p class="mailroom-note">
+      DELIVERED WITH LOVE · OPEN WHENEVER YOU NEED A REMINDER.
+    </p>
+
+  </main>
+
+
+  <!-- LETTER OPENING MODAL -->
+
+  <div
+    class="letter-modal"
+    id="letterModal"
+    aria-hidden="true"
+    role="dialog"
+    aria-modal="true"
+    aria-label="A personal letter"
+  >
+
+    <div class="letter-stage">
+
+      <button
+        class="modal-close letter-close"
+        aria-label="Close letter"
+        type="button"
+      >
+        ×
+      </button>
+
+
+      <!-- ENVELOPE -->
+
+      <div class="open-envelope">
+
+        <!-- Back of envelope -->
+
+        <div class="envelope-back"></div>
+
+
+        <!-- Letter concealed inside envelope -->
+
+        <div class="letter-paper">
+
+          <span class="letter-from" id="letterFrom"></span>
+
+          <div class="letter-text" id="letterText"></div>
+
+        </div>
+
+
+        <!-- Side folds -->
+
+        <div class="envelope-front"></div>
+
+
+        <!-- Bottom fold -->
+
+        <div class="envelope-bottom"></div>
+
+
+        <!-- Top flap -->
+
+        <div class="envelope-flap"></div>
+
+
+        <!-- Wax seal -->
+
+        <span class="envelope-seal">K</span>
+
+      </div>
+
+
+      <p class="letter-hint">
+        A MESSAGE, JUST FOR YOU
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <footer class="site-footer">
+
+    <span>THE KESHAV ISSUE · 19TH BIRTHDAY</span>
+
+    <span>THE MAILROOM / 03</span>
+
+    <a href="index.html">HOME ↑</a>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>

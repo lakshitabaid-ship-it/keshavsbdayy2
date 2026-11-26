@@ -2,7 +2,7 @@
 /* EDIT YOUR PERSONAL CONTENT HERE */
 
 const galleryItems = Array.from({length:20}, (_,i)=>({
-  image:`photo-${String(i+1).padStart(2,"0")}.jpg`,
+  image:`photo-${String(i+1).padStart(2,"0")}.jpeg`,
   description:`A favourite little moment. Replace this caption with the story behind photo ${i+1}.`
 }));
 

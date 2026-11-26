@@ -48,6 +48,7 @@ function renderLetters(){
   grid.querySelectorAll(".envelope-card").forEach(card=>card.addEventListener("click",()=>openLetter(Number(card.dataset.letter))));
 }
 
+
 function openLetter(i) {
   const item = letters[i];
 
@@ -60,11 +61,17 @@ function openLetter(i) {
   modal.classList.add("open");
   modal.setAttribute("aria-hidden", "false");
 
-  // Give the closed envelope time to appear first
-  setTimeout(() => {
-    modal.classList.add("revealed");
-  }, 100);
+  // Wait for the closed envelope to render before opening it
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      setTimeout(() => {
+        modal.classList.add("revealed");
+      }, 350);
+    });
+  });
 }
+
+
 
 function closeModal(el) {
   el.classList.remove("revealed");
